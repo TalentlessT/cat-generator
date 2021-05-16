@@ -1,13 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* blackColor: #000000
+GreyColor: #5D737E
+RedColor: #E84855
+WhiteColor: #F0F7EE
+TransparentBlack: rgba(0,0,0, 0.75) */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "quicksand";
+  background-color: #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1{
+  color: #E84855;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cat-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+img{
+  width: 800px;
+  height: 600px;
+}
+
+.new-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
+button{
+  color: #E84855;
+  justify-content: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 2rem 8rem;
+  cursor: pointer
+}
+
+button:hover{
+  background-color: #E84855;
+  color: #F0F7EE;
+  transition: .2s;
+}
+
+@media only screen and (max-width: 1000px){
+  button{
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  img{
+    width: 300px;
+    height: 200px;
+  }
 }
